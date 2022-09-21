@@ -5,12 +5,14 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg":"git cz"
     }
   },
   "scripts": {
     "dev": "nodemon index.ts",
-    "git-cz"
+    "commit":"git-cz"
+    
   },
   "dependencies": {
     "@prisma/client": "^4.3.1",
@@ -31,7 +33,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   }
 }
