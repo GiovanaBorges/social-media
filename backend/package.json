@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "husky":{
-      "hooks":{
-        "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
-      }
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  ,
+  },
   "scripts": {
     "dev": "nodemon index.ts"
   },
